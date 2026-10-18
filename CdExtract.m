@@ -15,4 +15,4 @@ RCdAB = data(:, 2);
 [Rmach_CleanAB,uniqueser] = unique(RmachAB);
 RCd_CleanAB = RCdAB(uniqueser);
 % RCd_CleanAB = filloutliers(RCd_CleanAB,"pchip","movmedian",5)
-plot(Rmach_CleanAB,RCd_CleanAB)
+% plot(Rmach_CleanAB,RCd_CleanAB)
