@@ -1,10 +1,10 @@
-data = readmatrix("Plant_DEP_A2/Macos/d.xls");
+data = readmatrix("Plant_DEP_A2/Macos/Cd.xls");
 Rmach = data(:, 1);
 RCd = data(:, 2);
 
 [Rmach_Clean,uniqueser] = unique(Rmach);
 RCd_Clean = RCd(uniqueser);
-RCd_Clean = filloutliers(RCd_Clean,"pchip","movmedian",15)
+RCd_Clean = filloutliers(RCd_Clean,"pchip","movmedian",20)
 plot(Rmach_Clean,RCd_Clean)
 
 
